@@ -22,8 +22,13 @@
   - Flask
   - jsonify
  
-## Instrucciones para la conexión
-Necesito los pines
+## Instrucciones para la conexión(pines):
+- *Sensor de distancia ultrasónico* Grove: 5
+- *Zumbador*: 18
+- *Sensor de temperatura y humedad*: 12 y 13
+- *Potenciómetro*: A0
+- *LED*: 16
+- *Pulsador*: 17
 
 ## Instrucciones para le ejecución del sistema
 
@@ -36,8 +41,9 @@ Necesito los pines
 ### Paso 3: Verifica la conexión a Internet:
 Ejecuta el siguiente comando para comprobar si está conectado:
 bash
+```
 ping -c 4 8.8.8.8
-
+```
 
 ### Paso 4: Configura la red inalámbrica:
 1. Ejecuta sudo raspi-config.
@@ -48,17 +54,20 @@ ping -c 4 8.8.8.8
 ### Paso 5: Ejecuta el entorno y el programa principal:
 1. Activa el entorno virtual:
    bash
+   ```
    source myenv/bin/activate
-   
-2. Navega al directorio del proyecto:
+   ```
+3. Navega al directorio del proyecto:
    bash
-   cd pruebasunitarias
-   cd pr_final
+   ```
+   cd pruebasunitarias/pr_final
+   ```
    
-3. Ejecuta el programa principal:
+4. Ejecuta el programa principal:
    bash
-   python3 main_f.py
-   
+   ```
+   python3 main.py
+   ```
 
 ### Paso 6: Interacción con el sistema:
 1. Una vez ejecutado con éxito, pulsa el pulsador.
